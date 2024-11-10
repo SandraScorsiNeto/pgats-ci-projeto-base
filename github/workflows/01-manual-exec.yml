@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CI de Níivel 01 - Disparo manual a partir de 1 clique
 
 # nome que vai aparecer lá nas opções de pipe
@@ -41,3 +42,43 @@ jobs:
      
 
        
+=======
+
+name: 'Execução Manual'
+
+# Gatilho de execução manual
+on:
+  workflow_dispatch:
+
+jobs:
+  e2e-tests:
+    steps: 
+     run: yarn
+     
+     - name: Instalando Playwright
+       run: yarn playwright install 
+
+     - name: Testes E2E (end-to-end)
+          run: yarn run e2e
+     
+     - uses: actions/upload-artifact@v4
+      with:
+        - name: relatorio-de-testes
+        path: ./playwright-report
+
+
+       
+
+       
+
+        - name: Instalando dependências
+          run: yarn
+
+        - name: Instalando Playwright
+          run: yarn playwright install 
+      
+        - name: Testes E2E (end-to-end)
+          run: yarn run e2e
+
+        -uses  
+>>>>>>> 776b55bf544dcb63fec2bfd952d3eb77dbc4126e
