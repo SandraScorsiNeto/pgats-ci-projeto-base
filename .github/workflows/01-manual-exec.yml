@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-# CI de Nível 01 - Disparo manual a partir de 1 clique
-
-# nome que vai aparecer lá nas opções de pipe
-=======
 # CI de Nível 01 - Disparo Manual a partir de 1 clique
->>>>>>> a80a3ac7f455fabee70b12fd26d5af975188a5cc
 
 # Nome que aparecerá nas opções de pipeline
 name: 'Execução Manual'
